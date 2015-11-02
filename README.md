@@ -23,9 +23,9 @@ You start work on a big feature, making a few commits that don't entirely finish
 fbee832 Started new-feature (aviflombaum, 2 days ago)
 ```
 
-2 days ago we started working on our new-feature. Yesterday we were almost done. Today we made progress, but it's still broken. In our current state, if we had to push the repository live and deploy the latest version of our code to production, our users would see a half-finished, currently broken new-feature. That's no good.
+Two days ago we started working on our new-feature. Yesterday we were almost done. Today we made progress, but it's still broken. In our current state, if we had to push the repository live and deploy the latest version of our code to production, our users would see a half-finished, currently broken new-feature. That's no good.
 
-But no big deal, right? We can just wait until we're done with new-feature to deploy our code and push the repository live to our users. Here's what happens though. We notice a big bug that is currently breaking the application for all users. The bug is an easy fix, one simple change and deploy of your code can make everything work again. Unfortunately, even if you made that commit, you can't currently deployed because while that commit might fix the bug, you'd still be pushing your half-finished and broken new-feature.
+But no big deal, right? We can just wait until we're done with new-feature to deploy our code and push the repository live to our users. Here's what happens though. We notice a big bug that is currently breaking the application for all users. The bug is an easy fix, one simple change and deploy of your code can make everything work again. Unfortunately, even if you made that commit, you can't currently deploy it because while that commit might fix the bug, you'd still be pushing your half-finished and broken new-feature.
 
 ```
 r4212d1 Fix to application breaking bug (aviflombaum, just now)
@@ -34,7 +34,7 @@ r4212d1 Fix to application breaking bug (aviflombaum, just now)
 fbee832 Started new-feature (aviflombaum, 2 days ago)
 ```
 
-See, we can't push all those commits. Wouldn't it have been great if we simply isolated our work on new-feature into it's own copy of our code so that until it's done, we could have deployed the commit that fixes the application? We can do exactly this using a feature in git called branches.
+See, we can't push all those commits. Wouldn't it have been great if we simply isolated our work on new-feature into its own copy of our code so that until it's done, we could have deployed the commit that fixes the application? We can do exactly this using a feature in git called branches.
 
 ## Making a branch with `git branch`
 
@@ -321,6 +321,6 @@ When you `git pull` the following things will occur:
 
 ## Conclusion
 
-Git is complex and collaborating with people in this matter is just hard - there's no easy way to allows 100s of people to all work on the same code base. These workflows are just being introduced to you, you'll have lots of time to practice them and memorize what each command does. Don't try to learn it all at once, just start to get and understanding of what's what.
+Git is complex and collaborating with people in this matter is just hard - there's no easy way to allows 100s of people to all work on the same code base. These workflows are just being introduced to you.  You'll have lots of time to practice them and memorize what each command does. Don't try to learn it all at once; instead just start to get an understanding of what's what.
 
 ![XKCD Git](http://imgs.xkcd.com/comics/git.png)
