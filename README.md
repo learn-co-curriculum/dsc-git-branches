@@ -296,7 +296,7 @@ mission-critical-application $ ls
  remote-bug-fix
 ```
 
-The commits fetched via `git fetch` were now merged from the `origin/master` branch into our local `master` branch. And now `ls` reveals that the file present on the remote, `remote-bug-fix` is no integrated into our local copy of `master` as well.
+The commits fetched via `git fetch` were now merged from the `origin/master` branch into our local `master` branch. And now `ls` reveals that the file present on the remote, `remote-bug-fix` is now integrated into our local copy of `master` as well.
 
 When we fetched, git also outputted: `* [new branch]      remote-feature-branch -> origin/remote-feature-branch`. Similarly, git fetched a new branch and if we want to check it out or merge it we can using `git checkout` or `git merge`. Let's checkout what code is on `remote-feature-branch`, a branch another developer made for another feature and pushed up to GitHub so they can share it with us.
 
