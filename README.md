@@ -280,7 +280,7 @@ When we `fetch` with git, we are asking to copy all changes on the remote to our
 
 ![Fetch without integration](https://dl.dropboxusercontent.com/s/iy2jovft8ykrxbd/2015-11-02%20at%202.08%20PM.png)
 
-Our remote copy on GitHub has a file, `remote-bug-fix`, persumably some code that another developer pushed up to our remote version of the `master` branch to fix a bug. Even after we fetched, our local copy still doesn't appear to have that file.
+Our remote copy on GitHub has a file, `remote-bug-fix`, presumably some code that another developer pushed up to our remote version of the `master` branch to fix a bug. Even after we fetched, our local copy still doesn't appear to have that file.
 
 After you fetch, you have access to the remote code but you still have to merge it. How do you merge a change fetched into `origin/master` into your current master? From within your local master branch, type: `git merge origin/master`, referring to the branch's full path, `remote/branch`, or `origin/master`.
 
