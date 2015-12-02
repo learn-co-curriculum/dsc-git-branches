@@ -324,3 +324,5 @@ When you `git pull` the following things will occur:
 Git is complex and collaborating with people in this matter is just hard - there's no easy way to allows 100s of people to all work on the same code base. These workflows are just being introduced to you.  You'll have lots of time to practice them and memorize what each command does. Don't try to learn it all at once; instead just start to get an understanding of what's what.
 
 ![XKCD Git](http://imgs.xkcd.com/comics/git.png)
+
+<a href='https://learn.co/lessons/git-collaboration-readme' data-visibility='hidden'>View this lesson on Learn.co</a>
