@@ -15,7 +15,7 @@
 
 A key to collaborating with git is to keep discrete and individual lines of work isolated from each other. Consider the following scenario.
 
-You start work on a big feature, making a few commits that don't entirely finish the feature. You git log might look like:
+You start work on a big feature, making a few commits that don't entirely finish the feature. Your git log might look like:
 
 ```
 512bec5 Still broken, working on new-feature (aviflombaum, 2 hours ago)
@@ -317,10 +317,12 @@ If you want to both fetch and merge, which is what you want to do 99% of the tim
 When you `git pull` the following things will occur:
 
 1. You will `git fetch` all remote changes, including those on the current branch, existing branches, and new branches.
-2. Any changes that are on a remote branch that is being tracked by your local branch, that is to say, if you are on `master` and there is a change to `origin/master`, those changes will be automatically merged.
+2. Any changes that are on a remote branch which is being tracked by your local branch, that is to say, if you are on `master` and there is a change to `origin/master`, those changes will be automatically merged.
 
 ## Conclusion
 
-Git is complex and collaborating with people in this matter is just hard - there's no easy way to allows 100s of people to all work on the same code base. These workflows are just being introduced to you.  You'll have lots of time to practice them and memorize what each command does. Don't try to learn it all at once; instead just start to get an understanding of what's what.
+Git is complex and collaborating with people in this matter is just hard - there's no easy way to allow 100s of people to all work on the same code base. These workflows are just being introduced to you.  You'll have lots of time to practice them and memorize what each command does. Don't try to learn it all at once; instead just start to get an understanding of what's what.
 
 ![XKCD Git](http://imgs.xkcd.com/comics/git.png)
+
+<a href='https://learn.co/lessons/git-collaboration-readme' data-visibility='hidden'>View this lesson on Learn.co</a>
