@@ -325,4 +325,4 @@ Git is complex and collaborating with people in this matter is just hard - there
 
 ![XKCD Git](http://imgs.xkcd.com/comics/git.png)
 
-<a href='https://learn.co/lessons/git-collaboration-readme' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/git-collaboration-readme' title='Git Collaboration'>Git Collaboration</a> on Learn.co and start learning to code for free.</p>
