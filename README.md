@@ -253,7 +253,7 @@ Now the branches have been merged and if you `ls`, you'll see the `new-feature` 
 
 Your local branches can attach to remote branches that live on the internet, generally on GitHub, that your team members might contribute to and you can download locally.
 
-Whenever you want update your local copy with all the branches that might have been added to the GitHub remote, you can type `git fetch`.
+Whenever you want to update your local copy with all the branches that might have been added to the GitHub remote, you can type `git fetch`.
 
 ```
 mission-critical-application $ git fetch
@@ -325,4 +325,6 @@ Git is complex and collaborating with people in this matter is just hard - there
 
 ![XKCD Git](http://imgs.xkcd.com/comics/git.png)
 
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/git-collaboration-readme' title='Git Collaboration'>Git Collaboration</a> on Learn.co and start learning to code for free.</p>
+<a href='https://learn.co/lessons/git-collaboration-readme' data-visibility='hidden'>View this lesson on Learn.co</a>
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/git-collaboration-readme'>Git Collaboration</a> on Learn.co and start learning to code for free.</p>
