@@ -2,7 +2,7 @@
 
 ## Objectives
 
-1. Make a new branch for your repository with `git branch`
+1. Make a new branch for your repository with `git branch`.
 2. Checkout a branch with `git checkout`.
 3. Create and checkout a new branch with `git checkout -b`.
 4. Create commits within a branch.
@@ -282,7 +282,7 @@ When we `fetch` with git, we are asking to copy all changes on the remote to our
 
 Our remote copy on GitHub has a file, `remote-bug-fix`, presumably some code that another developer pushed up to our remote version of the `master` branch to fix a bug. Even after we fetched, our local copy still doesn't appear to have that file.
 
-After you fetch, you have access to the remote code but you still have to merge it. How do you merge a change fetched into `origin/master` into your current master? From within your local master branch, type: `git merge origin/master`, referring to the branch's full path, `remote/branch`, or `origin/master`.
+After you fetch, you have access to the remote code but you still have to merge it. How do you merge a change fetched from `origin/master` into your current master? From within your local master branch, type: `git merge origin/master`, referring to the branch's full path, `remote/branch`, or `origin/master`.
 
 ```
 mission-critical-application $ git merge origin/master
@@ -296,7 +296,7 @@ mission-critical-application $ ls
  remote-bug-fix
 ```
 
-The commits fetched via `git fetch` were now merged from the `origin/master` branch into our local `master` branch. And now `ls` reveals that the file present on the remote, `remote-bug-fix` is now integrated into our local copy of `master` as well.
+The commits fetched via `git fetch` are now merged from the `origin/master` branch into our local `master` branch. And now `ls` reveals that the file present on the remote, `remote-bug-fix` is integrated into our local copy of `master` as well.
 
 When we fetched, git also outputted: `* [new branch]      remote-feature-branch -> origin/remote-feature-branch`. Similarly, git fetched a new branch and if we want to check it out or merge it we can using `git checkout` or `git merge`. Let's checkout what code is on `remote-feature-branch`, a branch another developer made for another feature and pushed up to GitHub so they can share it with us.
 
@@ -306,7 +306,7 @@ Branch remote-feature-branch set up to track remote branch remote-feature-branch
 Switched to a new branch 'remote-feature-branch'
 ```
 
-When we checkout a remote branch fetched, git will create a local branch to track that remote and switch to that branch. We can now do work, push it back up to GitHub and another developer can fetch those changes down.
+When we checkout a remote branch fetched, git will create a local branch to track that remote and switch to that branch. We can now do work, push it back up to GitHub, and another developer can fetch those changes down.
 
 `git fetch` is a pretty low-level git command we don't use that much because it always requires two steps, first `git fetch` and then `git merge` to actually integrate those changes into your working branch. Generally, if you are in `master` you want to immediately `fetch` and `merge` any changes to the remote master.
 
@@ -321,10 +321,12 @@ When you `git pull` the following things will occur:
 
 ## Conclusion
 
-Git is complex and collaborating with people in this matter is just hard - there's no easy way to allow 100s of people to all work on the same code base. These workflows are just being introduced to you.  You'll have lots of time to practice them and memorize what each command does. Don't try to learn it all at once; instead just start to get an understanding of what's what.
+Git is complex, and collaborating with people in this matter is just hard - there's no easy way to allow 100s of people to all work on the same code base. These workflows are just being introduced to you.  You'll have lots of time to practice them and memorize what each command does. Don't try to learn it all at once; instead just start to get an understanding of what's what.
 
 ![XKCD Git](http://imgs.xkcd.com/comics/git.png)
 
 <a href='https://learn.co/lessons/git-collaboration-readme' data-visibility='hidden'>View this lesson on Learn.co</a>
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/git-collaboration-readme'>Git Collaboration</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/git-collaboration-readme'>Git Collaboration</a> on Learn.co and start learning to code for free.</p>
