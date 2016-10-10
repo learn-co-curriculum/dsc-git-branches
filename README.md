@@ -236,7 +236,7 @@ mission-critical-application $ git checkout master
 Switched to branch 'master'
 ```
 
-Once on your target branch, type: `git merge <branch name>` where `<branch name>` is the branch we want to merge, in this case, `git merge new-feature` will do the trick.
+Once on your target branch, type: `git merge <branch name>` where `<branch name>` is the branch we want to merge. In this case, `git merge new-feature` will do the trick.
 
 ```
 mission-critical-application $ git merge new-feature
