@@ -209,11 +209,24 @@ Let's rename `new-feature-file` to `new-feature` to signify the code we wrote to
 ```
 mission-critical-application $ mv new-feature-file new-feature
 mission-critical-application $ git add new-feature
-mission-critical-application $ git commit -m "Finished feature"
+mission-critical-application $ git commit -a -m "Finished feature"
 [new-feature bfe50fc] Finished feature
  1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 new-feature
 ```
+
+_Ignore the `-a` in our `commit` action. Some subtleties of `git` can be saved
+for later!_ For the curious, read this "Advanced" sidebar.
+
+**Advanced**
+
+Some might be wondering why we added the `-a` flag in the commit. Consider what
+`git`'s perspective on an `mv` is. You `added` the file `new-feature-file`
+previously. You then `mv`'d it. From `git`'s perspective you deleted
+`new-feature-file` and added `new-feature` but `git` doesn't know if your
+intent was to add another similarly named file and delete a file **OR** to
+rename a file.  To tell `git` that your want to bring changes in for `-a`ll
+currently tracked files, effectivecly to perform a rename, we add `-a`.
 
 Let's look at our timeline now.
 
@@ -236,10 +249,39 @@ mission-critical-application $ git checkout master
 Switched to branch 'master'
 ```
 
-Once on your target branch, type: `git merge <branch name>` where `<branch name>` is the branch we want to merge. In this case, `git merge new-feature` will do the trick.
+We're about to perform a merge, but we need to do one tiny bit of
+house-keeping. When you run `git merge`, `git` will ask you to create a commit
+to reflect that you've done a merge. By default `git` will look for a default,
+console-based editor (like, perhaps the venerable [vi editor][vi]). While powerful,
+`vi` and its cousins have a challenging learning curve at the outset. To make
+keep ourselves focused on the `git` challenge at hand, we're going to tell
+`git` to use the Atom editor. Execute the following:
 
+`git config core.editor "atom --wait"`
+
+This means that when `git` asks you to write a merge commit, you'll be given a
+"merge message" file to edit _in Atom_. After you edit the file and save it,
+`git` will `--wait` for you to **close the editor session** before taking the
+contents of your file and applying them to the merge. This "merge message"
+usually contains details about what the branch did and why its contents are
+desirable to have in the gaining branch. Let's try it out!
+
+
+Now Atom will be launched and you'll be given a tab called `MERGE_MSG`. Here's
+a good place to describe what you're gaining. In this case we wrote:
+
+```text
+new-feature had some great ideas that needed to
+come home to master!
 ```
-mission-critical-application $ git merge new-feature
+
+We then *save* the file in Atom and then close the window.
+
+**Important**: While how one closes a window varies from operating system to
+operating system, the `--wait` flag we told Atom about means that the window
+that was launched **must be closed** in order for the `merge` process to
+complete!
+
 Updating e5830af..bfe50fc
 Fast-forward
  new-feature      | 0
@@ -330,3 +372,5 @@ Git is complex, and collaborating with people in this matter is just hard - ther
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/git-collaboration-readme'>Git Collaboration</a> on Learn.co and start learning to code for free.</p>
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/git-collaboration-readme'>Git Collaboration</a> on Learn.co and start learning to code for free.</p>
+
+[vi]: https://www.youtube.com/watch?v=_NUO4JEtkDw
