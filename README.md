@@ -215,6 +215,19 @@ mission-critical-application $ git commit -a -m "Finished feature"
  create mode 100644 new-feature
 ```
 
+_Ignore the `-a` in our `commit` action. Some subtleties of `git` can be saved
+for later!_ For the curious, read this "Advanced" sidebar.
+
+**Advanced**
+
+Some might be wondering why we added the `-a` flag in the commit. Consider what
+`git`'s perspective on an `mv` is. You `added` the file `new-feature-file`
+previously. You then `mv`'d it. From `git`'s perspective you deleted
+`new-feature-file` and added `new-feature` but `git` doesn't know if your
+intent was to add another similarly named file and delete a file **OR** to
+rename a file.  To tell `git` that your want to bring changes in for `-a`ll
+currently tracked files, effectivecly to perform a rename, we add `-a`.
+
 Let's look at our timeline now.
 
 ![Completed Feature Branch](https://dl.dropboxusercontent.com/s/xtoehu7tv5zim6v/2015-11-02%20at%2012.31%20PM.png)
