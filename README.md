@@ -249,10 +249,39 @@ mission-critical-application $ git checkout master
 Switched to branch 'master'
 ```
 
-Once on your target branch, type: `git merge <branch name>` where `<branch name>` is the branch we want to merge. In this case, `git merge new-feature` will do the trick.
+We're about to perform a merge, but we need to do one tiny bit of
+house-keeping. When you run `git merge`, `git` will ask you to create a commit
+to reflect that you've done a merge. By default `git` will look for a default,
+console-based editor (like, perhaps the venerable [vi editor][vi]). While powerful,
+`vi` and its cousins have a challenging learning curve at the outset. To make
+keep ourselves focused on the `git` challenge at hand, we're going to tell
+`git` to use the Atom editor. Execute the following:
 
+`git config core.editor "atom --wait"`
+
+This means that when `git` asks you to write a merge commit, you'll be given a
+"merge message" file to edit _in Atom_. After you edit the file and save it,
+`git` will `--wait` for you to **close the editor session** before taking the
+contents of your file and applying them to the merge. This "merge message"
+usually contains details about what the branch did and why its contents are
+desirable to have in the gaining branch. Let's try it out!
+
+
+Now Atom will be launched and you'll be given a tab called `MERGE_MSG`. Here's
+a good place to describe what you're gaining. In this case we wrote:
+
+```text
+new-feature had some great ideas that needed to
+come home to master!
 ```
-mission-critical-application $ git merge new-feature
+
+We then *save* the file in Atom and then close the window.
+
+**Important**: While how one closes a window varies from operating system to
+operating system, the `--wait` flag we told Atom about means that the window
+that was launched **must be closed** in order for the `merge` process to
+complete!
+
 Updating e5830af..bfe50fc
 Fast-forward
  new-feature      | 0
@@ -343,3 +372,5 @@ Git is complex, and collaborating with people in this matter is just hard - ther
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/git-collaboration-readme'>Git Collaboration</a> on Learn.co and start learning to code for free.</p>
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/git-collaboration-readme'>Git Collaboration</a> on Learn.co and start learning to code for free.</p>
+
+[vi]: https://www.youtube.com/watch?v=_NUO4JEtkDw
