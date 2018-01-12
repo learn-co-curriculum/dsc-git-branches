@@ -209,7 +209,7 @@ Let's rename `new-feature-file` to `new-feature` to signify the code we wrote to
 ```
 mission-critical-application $ mv new-feature-file new-feature
 mission-critical-application $ git add new-feature
-mission-critical-application $ git commit -m "Finished feature"
+mission-critical-application $ git commit -a -m "Finished feature"
 [new-feature bfe50fc] Finished feature
  1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 new-feature
