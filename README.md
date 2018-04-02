@@ -367,6 +367,8 @@ Git is complex, and collaborating with people in this matter is just hard - ther
 
 ![XKCD Git](http://imgs.xkcd.com/comics/git.png)
 
+_Stick-person's advice is not good for development, great for humor!_
+
 <a href='https://learn.co/lessons/git-collaboration-readme' data-visibility='hidden'>View this lesson on Learn.co</a>
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/git-collaboration-readme'>Git Collaboration</a> on Learn.co and start learning to code for free.</p>
