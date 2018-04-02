@@ -282,6 +282,7 @@ operating system, the `--wait` flag we told Atom about means that the window
 that was launched **must be closed** in order for the `merge` process to
 complete!
 
+```
 Updating e5830af..bfe50fc
 Fast-forward
  new-feature      | 0
