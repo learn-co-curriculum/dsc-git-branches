@@ -23,7 +23,7 @@ You start work on a big feature, making a few commits that don't entirely finish
 fbee832 Started new-feature (aviflombaum, 2 days ago)
 ```
 
-Two days ago we started working on our new-feature. Yesterday we were almost done. Today we made progress, but it's still broken. In our current state, if we had to push the repository live and deploy the latest version of our code to production, our users would see a half-finished, currently broken new-feature. That's no good.
+Two days ago, we started working on our new-feature. Yesterday, we were almost done. Today, we made progress, but it's still broken. In our current state, if we had to push the repository live and deploy the latest version of our code to production, our users would see a half-finished, currently broken new-feature. That's no good.
 
 But no big deal, right? We can just wait until we're done with new-feature to deploy our code and push the repository live to our users. Here's what happens though. We notice a big bug that is currently breaking the application for all users. The bug is an easy fix, one simple change and deploy of your code can make everything work again. Unfortunately, even if you made that commit, you can't currently deploy it because while that commit might fix the bug, you'd still be pushing your half-finished and broken new-feature.
 
@@ -38,7 +38,7 @@ See, we can't push all those commits. Wouldn't it have been great if we simply i
 
 ## Making a branch with `git branch`
 
-Let's quickly make a repository that we can use as a sandbox to experiment with the collaborative features of git. You don't have to follow along, you'll be able to understand the concepts from the reading but if you'd like, you can copy and paste these commands locally.
+Let's quickly make a repository that we can use as a sandbox to experiment with the collaborative features of git. You don't have to follow along, you'll be able to understand the concepts from the reading but if you'd like, you can copy and paste these commands locally (the commands are everything _after_ the `$` in the code snippets).
 
 From our home directory we're going to make a new directory for our mission-critical-application.
 
@@ -266,7 +266,6 @@ contents of your file and applying them to the merge. This "merge message"
 usually contains details about what the branch did and why its contents are
 desirable to have in the gaining branch. Let's try it out!
 
-
 Now Atom will be launched and you'll be given a tab called `MERGE_MSG`. Here's
 a good place to describe what you're gaining. In this case we wrote:
 
@@ -296,10 +295,10 @@ Now the branches have been merged and if you `ls`, you'll see the `new-feature` 
 
 Your local branches can attach to remote branches that live on the internet, generally on GitHub, that your team members might contribute to and you can download locally.
 
-Whenever you want to update your local copy with all the branches that might have been added to the GitHub remote, you can type `git fetch`.
+Whenever you want to update your local copy with all the branches that might have been added to the GitHub remote, you can type `git fetch -a`.
 
 ```
-mission-critical-application $ git fetch
+mission-critical-application $ git fetch -a
 remote: Counting objects: 4, done.
 remote: Compressing objects: 100% (2/2), done.
 remote: Total 4 (delta 3), reused 3 (delta 2), pack-reused 0
@@ -309,7 +308,7 @@ From github.com:aviflombaum/mission-critical-application
  * [new branch]      remote-feature-branch -> origin/remote-feature-branch
 ```
 
-From within `master` (though technically what branch I was in when I typed `git fetch` does not matter), I executed `git fetch`. The last 3 lines of output are really important, let's take a closer look:
+From within `master` (though technically what branch I was in when I typed `git fetch -a` does not matter), I executed `git fetch -a`. The last 3 lines of output are really important, let's take a closer look:
 
 ```
 From github.com:aviflombaum/mission-critical-application
@@ -364,15 +363,11 @@ When you `git pull` the following things will occur:
 
 ## Conclusion
 
-Git is complex, and collaborating with people in this matter is just hard - there's no easy way to allow 100s of people to all work on the same code base. These workflows are just being introduced to you.  You'll have lots of time to practice them and memorize what each command does. Don't try to learn it all at once; instead just start to get an understanding of what's what.
+Git is complex, and collaborating with people in this manner is just hard - there's no easy way to allow 100s of people to all work on the same code base. These workflows are just being introduced to you.  You'll have lots of time to practice them and memorize what each command does. Don't try to learn it all at once; instead just start to get an understanding of what's what.
 
 ![XKCD Git](http://imgs.xkcd.com/comics/git.png)
 
 _Do not do as stick man suggests!_
-
-<a href='https://learn.co/lessons/git-collaboration-readme' data-visibility='hidden'>View this lesson on Learn.co</a>
-
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/git-collaboration-readme'>Git Collaboration</a> on Learn.co and start learning to code for free.</p>
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/git-collaboration-readme'>Git Collaboration</a> on Learn.co and start learning to code for free.</p>
 
