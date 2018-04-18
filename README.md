@@ -253,7 +253,7 @@ We're about to perform a merge, but we need to do one tiny bit of
 house-keeping. When you run `git merge`, `git` will ask you to create a commit
 to reflect that you've done a merge. By default `git` will look for a default,
 console-based editor (like, perhaps the venerable [vi editor][vi]). While powerful,
-`vi` and its cousins have a challenging learning curve at the outset. To make
+`vi` and its cousins have a challenging learning curve at the outset. To 
 keep ourselves focused on the `git` challenge at hand, we're going to tell
 `git` to use the Atom editor. Execute the following:
 
