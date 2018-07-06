@@ -44,7 +44,7 @@ It's an idea that a lot of fiction has presented in the last 50 years.
 
 If you understand multiple-timeline fiction, you get the idea of branches.
 
-![Annie Edison Says Farewhen to the Inspector](https://gph.is/XI1yzM)
+![Annie Edison Says Farewhen to the Inspector](https://media.giphy.com/media/aorHd4Tl6qIDK/giphy.gif)
 
 By doing work in branches, all collaborators can do work without messing with
 the main line known as `master`. OK, so how can we _actually_ leverage this
