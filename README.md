@@ -85,12 +85,9 @@ checkout <branch name>`.
 > `new-branch-name` and move into it by checking
 > it out.
 
-You can always move between branches with `git checkout <branch name>`. If you
-are currently on `add-rainbow-background`, you can move back to `master` with
-`git checkout master`. If the last branch that you switch from was `master`,
-you can also type `git checkout -` in order to move back to the previous
-branch.  Then to get back to `add-rainbow-background` you can switch it again
-using `git checkout add-rainbow-background`.
+If you are currently on `add-rainbow-background`, you can move back to `master`
+with `git checkout master`. You can also type `git checkout -` in order to move
+back to the previous branch.
 
 To make sure that you don't lose work, you should make sure all your changes
 are committed before you switch branches. If you're doing work in
