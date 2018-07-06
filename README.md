@@ -21,13 +21,33 @@ these golden practices are so helpful.
 
 ## Define What a `git` Branch is
 
-A `git` branch is a means to diverge from the main line of development, and be
-able to continue to do work without messing with the main line known as
-`master`.  The master `git` branch is our default branch. One of the
-recommended ways to use `git` is to make sure that the master branch is always
-"clean" with working code, so that if you ever need to add a bug fix, or start
-a new feature, you can work off a working branch. If there's broken code in the
-`master` branch, you wouldn't be able to safely deploy.
+A `git` branch is a means to separate a new set of commits or edits from
+another branch. Typically we create a new branch off of `master`. If all
+developers we collaborate with honor Golden Practice 1, we can trust that
+`master` will be a safe starting point.
+
+When we branch, we're creating a separate parallel universe. We can experiment
+there without any bad effect. It's a contained sandbox where mistakes can be
+made or ideas can incubate.
+
+It's an idea that a lot of fiction has presented in the last 50 years.
+
+|Parallel Universe|Source|
+|-----------------|------|
+|Mirror Dimension | Dr. Strange (2016)|
+|Darkest Timeline | "Community" / "Inspector Spacetime" |
+|The entire premise of..| "Dr. Who" |
+|Mirror, Mirror (Evil Kirk / Spock) | Star Trek|
+|_Plot Against America_ | Philip Roth|
+|The entire plot of...| "Primer" (2004)|
+
+If you understand multiple-timeline fiction, you get the idea of branches.
+
+![Annie Edison Says Farewhen to the Inspector](https://gph.is/XI1yzM)
+
+By doing work in branches, all collaborators can do work without messing with
+the main line known as `master`. OK, so how can we _actually_ leverage this
+reality-shattering idea?
 
 ## Explain Branching and Committing Changes
 
