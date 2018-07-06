@@ -52,6 +52,10 @@ reality-shattering idea?
 
 ## Explain Branching and Committing Changes
 
+Let's suppose a `master` branch with 2 commits:
+
+![Image of master branch with two commits](https://curriculum-content.s3.amazonaws.com/skills-front-end-web-development/git-basics-mod-branch-based-development-readme/master-with-two-commits.png)
+
 Best practices suggest that any new set of changes related to fixing a bug,
 creating a feature, or even messing around with experimental code in a
 "sandbox", should be started on a new branch.
@@ -93,6 +97,11 @@ for the branch you're on.  The `--graph` "flag" tells `git` to make it pretty,
 like a timeline. You can use "Space" to page down the history of commits. Use
 `q` to exit.
 
+Let's suppose we added two new commits to our new branch. We could visualize it
+as:
+
+![Feature branch with two commits](https://curriculum-content.s3.amazonaws.com/skills-front-end-web-development/git-basics-mod-branch-based-development-readme/feature-branch-with-two-commits.png)
+
 To make sure that you don't lose work, you should make sure all your changes
 are committed before you switch branches. If you're doing work in
 `add-rainbow-background` that updates `style.css`, because `master` *also* has
@@ -128,10 +137,20 @@ branch. The first step for our `add-rainbow-background` merge is to checkout
 `master` because that is where you want the commits to end up.
 
 When performing `git merge -m "merge in feature add rainbow-background"` you
-add a message and complete the commit in one action.
+add a message and complete the merge in one action.
 
 Now the branches have been merged. If you type `git log --graph`, you'll see
 the commits from the `add-rainbow-background` branch on your master branch.
+
+Here's another way to visualize it:
+
+![Merged Timeline](https://curriculum-content.s3.amazonaws.com/skills-front-end-web-development/git-basics-mod-branch-based-development-readme/merged-timeline.png)
+
+In this graphic, you might note that a commit happened to `master` _between_
+the two commits that made up our feature branch. The amazing thing is `git`
+reconciles the `master` timeline, the additional commit, and the commits in
+this feature branch. It re-weaves multiple realities together. That is
+_seriously_ cool.
 
 When you're done with a branch that's been merged you can delete it with: `git
 branch -d branch-to-delete`.
