@@ -124,59 +124,6 @@ branch. The first step for our `add-rainbow-background` merge is to checkout
 `master` because that is where you want the commits to end up.
 
 When performing `git merge -m "merge in feature add rainbow-background"` you
-
-Now the branches have been merged. If you type `git log`, you'll see the
-commits from the `add-rainbow-background` branch on your master branch.
-
-## Explain Merging Remote Branches with `git fetch` and `git pull`
-
-Your local branches can attach to remote branches that live on the internet,
-generally on GitHub, that your team members might contribute to and you can
-download locally. Whenever you want to update your local copy with all the
-branches that might have been added to the GitHub remote, you can type `git
-fetch -a`.
-
-When we `fetch` with `git`, we are asking to copy all changes on the remote to
-our local `git` repository, but not actually integrate any. If there are
-changes to any branches such as master, you'll see new commits were found. The
-branch `origin/master` is the version of `master` on GitHub. Even if `git`
-fetched a new commit from `origin/master`, it did not merge it into the local
-master.
-
-After you fetch, you have access to the remote code but you still have to merge
-it. How do you merge a change fetched from `origin/master` into your current
-master? From within your local master branch, type `git merge origin/master`,
-referring to the branch's full path, `remote/branch`, or `origin/master`.
-
-The commits fetched via `git fetch` will be merged from the `origin/master`
-branch into our local `master` branch. Type `git log` to reveal that the new
-changes. These changes will be integrated into your local copy of `master` as
-well.
-
-When you fetch, `git` may also output: `* [new branch]`. Similarly, `git`
-fetched a new branch and if you want to check it out or merge it you can, using
-`git checkout` or `git merge`.
-
-When checking out a remote branch fetched, `git` will create a local branch to
-track that remote and switch to that branch. You can now do work, push it back
-up to GitHub, and another developer can fetch those changes down, too.
-
-`git fetch` is a pretty low-level `git` command that doesn't get used that much
-because it always requires two steps. First `git fetch` and then `git merge` to
-actually integrate those changes into your working branch. Generally, if you
-are in `master` you want to immediately `fetch` and `merge` any changes to the
-remote master.
-
-If you want to both fetch and merge, which is what you want to do most of the
-time, just type `git pull`. `git pull` is literally the combination of both
-`git fetch` and `git merge`. When you `git pull` the following things will
-occur:
-
-1. You will `git fetch` all remote changes, including those on the current
-   branch, existing branches, and new branches.
-2. Any changes that are on a remote branch which is being tracked by your local
-   branch, that is to say, if you are on `master` and there is a change to
-   `origin/master`, those changes will be automatically merged.
 add a message and complete the commit in one action.
 
 Now the branches have been merged. If you type `git log --graph`, you'll see
