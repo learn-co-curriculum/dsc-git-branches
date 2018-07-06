@@ -17,6 +17,7 @@ these golden practices are so helpful.
 2. Explain branching and committing changes
 3. Explain switching branches with `git checkout`
 4. Explain merging branches
+5. Preview Merging Remote Branches with `git fetch` and `git pull`
 6. Explain the motivation of the "golden practices"
 
 ## Define What a `git` Branch is
@@ -130,6 +131,32 @@ Now the branches have been merged. If you type `git log --graph`, you'll see
 the commits from the `add-rainbow-background` branch on your master branch.
 The `git log` command displays the history of commits for the branch you're on.
 The `--graph` "flag" tells `git` to make it pretty, like a timeline.
+
+## Preview Merging Remote Branches with `git fetch` and `git pull`
+
+Your local branches can merge in changes from _remote_ repositories branches
+just like they can do for _local_ branches!
+
+To update a list of available branches at a _remote_ we use: `git fetch
+remote-name`.
+
+As a shorthand to `fetch` and then automatically merge the same-named branch
+from the _remote_ we can issue `git fetch remote-name branch-name-to-merge-in`.
+
+This are complex topics as it brings up the topic of how to reconcile lines of
+code where you and another developer might have changed the same thing. This is
+called a "merge conflict." We're not going to cover that topic here. Instead we
+want you to embrace working in branches, keeping `master` functional, and doing
+_local_ merges. To give you a preview of what merging a remote branch workflow
+looks like:
+
+```shell
+$ git fetch origin
+$ git checkout add-rainbow-background
+$ git merge origin/laurens-rainbow-idea
+```
+
+And now our _local_ `add-rainbow-background` has Lauren's ideas woven into it.
 
 ## Explain The Motivation Of The "Golden Practices"
 
