@@ -133,6 +133,9 @@ add a message and complete the commit in one action.
 Now the branches have been merged. If you type `git log --graph`, you'll see
 the commits from the `add-rainbow-background` branch on your master branch.
 
+When you're done with a branch that's been merged you can delete it with: `git
+branch -d branch-to-delete`.
+
 ## Preview Merging Remote Branches with `git fetch` and `git pull`
 
 Your local branches can merge in changes from _remote_ repositories branches
