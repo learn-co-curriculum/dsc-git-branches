@@ -102,12 +102,19 @@ changes are committed before you switch branches.
 > when you're ready to hold changes-in-progress. When you're very comfortable
 > with `git`, look into it!
 
-If you add commits to  `add-rainbow-background` and then `git checkout master`,
-you will see that the `master` branch only has the code up to the moment you
-"branched" into the `add-rainbow-background` timeline, er, branch. The code
-from our `add-rainbow-background` is tucked away in that branch, waiting
-patiently in isolation from the rest of your code in `master` until the feature
-is considered complete.
+If you add commits to  `add-rainbow-background`, you can see them by typing
+`git log --graph`.  The `git log` command displays the history of commits for
+the branch you're on.  The `--graph` "flag" tells `git` to make it pretty, like
+a timeline. You can use "Space" to page down the history of commits. Use `q` to
+exit.
+
+If we then `git checkout master`, and use `git log --graph` again, we will see
+that the `master` branch _only_ has the code up to the moment you "branched"
+into the `add-rainbow-background` timeline, er, branch.
+
+The code from our `add-rainbow-background` is tucked away in that branch,
+waiting patiently in isolation from the rest of your code in `master` until the
+feature is considered complete.
 
 The final step of completing the `add-rainbow-background` work is to merge that
 branch into the `master` branch.
@@ -130,8 +137,6 @@ add a message and complete the commit in one action.
 
 Now the branches have been merged. If you type `git log --graph`, you'll see
 the commits from the `add-rainbow-background` branch on your master branch.
-The `git log` command displays the history of commits for the branch you're on.
-The `--graph` "flag" tells `git` to make it pretty, like a timeline.
 
 ## Preview Merging Remote Branches with `git fetch` and `git pull`
 
