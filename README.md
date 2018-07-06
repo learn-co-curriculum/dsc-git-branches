@@ -2,7 +2,7 @@
 
 ## Problem Statement
 
-A key to collaborating with git is to keep discrete and individual lines of work
+A key to collaborating with `git` is to keep discrete and individual lines of work
 isolated from each other. If you start work on a big feature and make a few commits
 that don't entirely finish the feature, you would not be able to commit these changes
 to the repository without potentially breaking the application, or having visibly unfinished
@@ -11,7 +11,7 @@ bug in the application for users that needs to be fixed immediately? Even if it'
 fix if you made that commit with your other unfinished changes, you'd be pushing your
 half-finished and broken new feature. How can your work on the new feature be isolated, so
 that until it's done, you can deploy the commit that fixes the application? This can be done
-using a feature in git called a `branch`.
+using a feature in `git` called a `branch`.
 
 ## Objectives
 
@@ -23,8 +23,8 @@ using a feature in git called a `branch`.
 ## Define What a `git` Branch is
 
 A `git` branch is a means to diverge from the main line of development, and be able to continue
-to do work without messing with the main line known as `master`.  The master git branch is our
-default branch. One of the recommended ways to use git is to make sure that the master branch
+to do work without messing with the main line known as `master`.  The master `git` branch is our
+default branch. One of the recommended ways to use `git` is to make sure that the master branch
 is always "clean" with working code, so that if you ever need to add a bug fix, or start a new
 feature, you can work off a a working branch. If there's broken code in the `master` branch,
 you wouldn't be able to safely deploy.
@@ -41,7 +41,7 @@ a new branch which can be seen in the branch list by typing `git branch` in the 
 ## Explain Switching Branches with `git checkout` 
 
 In order to start making changes on your new branch, you need to "checkout" or move into the
-`isolating-new-feature` timeline or branch, so that git knows that all commits made apply to
+`isolating-new-feature` timeline or branch, so that `git` knows that all commits made apply to
 only that unit of work, timeline, or branch. You can move between branches with
 `git checkout <branch name>`. 
 
@@ -90,9 +90,9 @@ that your team members might contribute to and you can download locally. Wheneve
 your local copy with all the branches that might have been added to the GitHub remote, you can type
 `git fetch -a`.
 
-When we `fetch` with git, we are asking to copy all changes on the remote to our local git repository,
+When we `fetch` with `git`, we are asking to copy all changes on the remote to our local `git` repository,
 but not actually integrate any. If there are changes to any branches such as master, you'll see new commits
-were found. The branch `origin/master` is the version of `master` on GitHub. Even if git fetched a new
+were found. The branch `origin/master` is the version of `master` on GitHub. Even if `git` fetched a new
 commit from `origin/master`, it did not merge it into the local master.
 
 After you fetch, you have access to the remote code but you still have to merge it. How do you merge a
@@ -103,14 +103,14 @@ The commits fetched via `git fetch` will be merged from the `origin/master` bran
 branch. Type `git log` to reveal that the new changes. These changes will be integrated into your
 local copy of `master` as well.
 
-When you fetch, git may also outpt: `* [new branch]`. Similarly, git fetched a new branch and
+When you fetch, `git` may also outpt: `* [new branch]`. Similarly, `git` fetched a new branch and
 if you want to check it out or merge it you can, using `git checkout` or `git merge`.
 
-When checking out a remote branch fetched, git will create a local branch to track that remote and
+When checking out a remote branch fetched, `git` will create a local branch to track that remote and
 switch to that branch. You can now do work, push it back up to GitHub, and another developer can
 fetch those changes down, too.
 
-`git fetch` is a pretty low-level git command that doesn't get used that much because it always
+`git fetch` is a pretty low-level `git` command that doesn't get used that much because it always
 requires two steps. First `git fetch` and then `git merge` to actually integrate those changes
 into your working branch. Generally, if you are in `master` you want to immediately `fetch`
 and `merge` any changes to the remote master.
@@ -127,7 +127,7 @@ be automatically merged.
 
 ## Conclusion
 
-Git is a complex tool, and these tools are just scratching the surface for collaborating with
+`Git` is a complex tool, and these tools are just scratching the surface for collaborating with
 people. These workflows are just being introduced to you--and it may be challenging for the time
 being. You'll have lots of time to practice them and get used to what each command does. Don't
 try to cram it it all in at once; instead just start to get an understanding of what is at your
