@@ -4,7 +4,7 @@
 
 Two golden practices in collaborating with `git` are:
 
-1. Keep the `master` _branch_ working at all times
+1. Keep the `master` _branch_ functional at all times
 2. Keep lines of work (_branches_) separate from each other
 
 Collaboration with `git` relies on _branches_. They allow our "golden
