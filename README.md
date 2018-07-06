@@ -65,12 +65,13 @@ branch` in the terminal.
 In the case of a branch relating to writing a new feature, you could name the
 branch `add-rainbow-background`. Thus: `git branch add-rainbow-background`.
 This will take the entire commit history of the branch you're on (usually
-`master`) and make it available in the `add-rainbow-background` branch.
+`master`) and make it the same history as on the `add-rainbow-background`
+branch.
 
 At this moment `master` and `add-rainbow-background` **are the same branches /
 realities** etc.  As you add more commits on the feature branch you're changing
 _only_ the `add-rainbow-background` reality. The `master` branch **will not be
-affected**. Let's talk about adding those commits.
+changed**. Let's talk about adding those commits.
 
 ## Explain Switching Branches with `git checkout`
 
@@ -109,7 +110,7 @@ patiently in isolation from the rest of your code in `master` until the feature
 is considered complete.
 
 The final step of completing the `add-rainbow-background` work is to merge that
-reality into the `master` branch.
+branch into the `master` branch.
 
 ## Explain Merging Branches
 
