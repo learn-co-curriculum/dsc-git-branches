@@ -34,54 +34,54 @@ you wouldn't be able to safely deploy.
 Best practices suggest that any new set of changes related to fixing a bug, creating a feature,
 or even messing around with experimental code in a "sandbox", should be started on a new branch.
 In order to start a new branch, in the terminal type `git branch <branch name>` to create the
-newly defined branch. In the case of a branch relating to isolating a new feature, you could name
-the branch `isolating-new-feature`. The master timeline remains unchanged and clean. This creates
+newly defined branch. In the case of a branch relating to writing a new feature, you could name
+the branch `add-rainbow-background`. The master branch remains unchanged and clean. This creates
 a new branch which can be seen in the branch list by typing `git branch` in the terminal.
 
 ## Explain Switching Branches with `git checkout` 
 
 In order to start making changes on your new branch, you need to "checkout" or move into the
-`isolating-new-feature` timeline or branch, so that `git` knows that all commits made apply to
-only that unit of work, timeline, or branch. You can move between branches with
+`add-rainbow-background` branch, so that `git` knows that all commits made apply to
+only that unit of work or branch. You can move between branches with
 `git checkout <branch name>`. 
 
 **Protip: You can create and checkout a new branch in one command using: `git checkout -b new-branch-name`.
 That will both create the branch `new-branch-name` and move into it by checking it out.**
 
 You can always move between branches with `git checkout <branch name>`. If you are currently on
-`isolating-new-feature`, you can move back to master with `git checkout master`. If the last
+`add-rainbow-background`, you can move back to master with `git checkout master`. If the last
 branch that you switch from was master, you can also type `git checkout -` in order to move
-back to the previous branch. Then to get back to `isolating-new-feature` you can switch
-it again using `git checkout isolating-new-feature`.
+back to the previous branch. Then to get back to `add-rainbow-background` you can switch
+it again using `git checkout add-rainbow-background`.
 
 If you have changes that are not yet committed, when you switch between branches, the untracked
 changes will follow you to the next branch. These changes must be committed with `git commit -m "<my commit message>"`
 while still on the feature or bug branch the changes belong to. When the changes on your feature
 or bug branch are committed, you'll notice that when you are on master or another branch with a
-different timeline, the commit with those changes will not be present. The master branch only has
-the code from the most recent commit relative to the master timeline or branch. The code from our
-`isolating-new-feature` is tucked away in that branch, waiting patiently in isolation from the
+different branch, the commit with those changes will not be present. The master branch only has
+the code from the most recent commit relative to the master branch or branch. The code from our
+`add-rainbow-background` is tucked away in that branch, waiting patiently in isolation from the
 rest of your code in `master` until the feature is considered complete.
 
-The final step of completing the `isolating-new-feature` work sprint is to merging that timeline
-into the master timeline.
+The final step of completing the `add-rainbow-background` work sprint is to merging that branch
+into the master branch.
 
-## Explain Merging branches
+## Explain Merging Branches
 
 Now that you have some additions to the code that you'd like to combine back with the master set of
-code, the goal is to bring the timeline of commits that occurred on the `isolating-new-feature`
-branch into the `master`. By merging the timelines, `master` will have all of the commits from the
-`isolating-new-feature` branch as though those events occurred on the `master` timeline.
+code, the goal is to bring the branch of commits that occurred on the `add-rainbow-background`
+branch into the `master`. By merging the branch, `master` will have all of the commits from the
+`add-rainbow-background` branch as though those events occurred on the `master` branch.
 
 When merging a branch with `git merge`, it's important to be currently working on your target branch,
-the branch you want to move into. The first step for our `isolating-new-feature` merge is to checkout
+the branch you want to move into. The first step for our `add-rainbow-background` merge is to checkout
 `master` because that is where you want the commits to end up.
 
-When performing `git merge`, `git` will ask you to create a commit to reflect that you've done
-a merge. If you use `git merge -m "<commit message>"` you can complete the commit in one action.
+When performing `git merge -m "merge in feature add rainbow-background"` you can add a message and complete the
+commit in one action.
 
-Now the branches have been merged. If you type `git log`, you'll see the commies from the
-`isolating-new-feature` branch on your master branch.
+Now the branches have been merged. If you type `git log`, you'll see the commits from the
+`add-rainbow-background` branch on your master branch.
 
 ## Explain Merging Remote Branches with `git fetch` and `git pull`
 
