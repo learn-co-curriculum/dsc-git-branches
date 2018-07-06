@@ -2,16 +2,14 @@
 
 ## Problem Statement
 
-A key to collaborating with `git` is to keep discrete and individual lines of work
-isolated from each other. If you start work on a big feature and make a few commits
-that don't entirely finish the feature, you would not be able to commit these changes
-to the repository without potentially breaking the application, or having visibly unfinished
-work. You could, in theory, wait until the feature is done--but what if you notice there's a
-bug in the application for users that needs to be fixed immediately? Even if it's an easy
-fix if you made that commit with your other unfinished changes, you'd be pushing your
-half-finished and broken new feature. How can your work on the new feature be isolated, so
-that until it's done, you can deploy the commit that fixes the application? This can be done
-using a feature in `git` called a `branch`.
+Two golden practices in collaborating with `git` are:
+
+1. Keep the `master` _branch_ working at all times
+2. Keep lines of work (_branches_) separate from each other
+
+Collaboration with `git` relies on _branches_. They allow our "golden
+practices". Let's explore `git` _branches_ and we'll come back to review why
+these golden practices are so helpful.
 
 ## Objectives
 
@@ -19,6 +17,7 @@ using a feature in `git` called a `branch`.
 2. Explain branching and committing changes
 3. Explain switching branches with `git checkout`
 4. Explain merging branches
+6. Explain the motivation of the "golden practices"
 
 ## Define What a `git` Branch is
 
@@ -144,6 +143,14 @@ occur:
 2. Any changes that are on a remote branch which is being tracked by your local
    branch, that is to say, if you are on `master` and there is a change to
    `origin/master`, those changes will be automatically merged.
+
+## Explain The Motivation Of The "Golden Practices"
+
+As developers we try to make sure that everyone has a clean place to start
+from: be that for writing a new feature or fixing a bug. Branching lets us keep
+`master` working at all times. If an emergency bug comes up, we know we have a
+solid foundation to build from. Feature branches also help us look at `git
+log` and see what the intention of a feature was.
 
 ## Conclusion
 
