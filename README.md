@@ -75,19 +75,23 @@ changed**. Let's talk about adding those commits.
 
 ## Explain Switching Branches with `git checkout`
 
-In order to start making changes on your new branch, you need to "checkout" or
-move into the `add-rainbow-background` branch, so that `git` knows that all
-commits made apply to only that branch. You can move between branches with `git
-checkout <branch name>`.
+In order to start making changes on your new branch, you need to "check it
+out." After checking a branch out, your commits will be added to that branch's
+history. You move between branches with `git checkout <branch name>`.
 
 > **PROTIP**: You can create and checkout a new branch in one command using:
 > `git checkout -b new-branch-name`.  That will both create the branch
-> `new-branch-name` and move into it by checking
-> it out.
+> `new-branch-name` and move into it by checking it out.
 
 If you are currently on `add-rainbow-background`, you can move back to `master`
 with `git checkout master`. You can also type `git checkout -` in order to move
 back to the previous branch.
+
+When you add commits to a branch, you can see the history of the commits by
+typing `git log --graph`. The `git log` command displays the history of commits
+for the branch you're on.  The `--graph` "flag" tells `git` to make it pretty,
+like a timeline. You can use "Space" to page down the history of commits. Use
+`q` to exit.
 
 To make sure that you don't lose work, you should make sure all your changes
 are committed before you switch branches. If you're doing work in
@@ -98,12 +102,6 @@ changes are committed before you switch branches.
 > **ADVANCED**: `git` has a powerful feature called `stash` which can be used,
 > when you're ready to hold changes-in-progress. When you're very comfortable
 > with `git`, look into it!
-
-If you add commits to  `add-rainbow-background`, you can see them by typing
-`git log --graph`.  The `git log` command displays the history of commits for
-the branch you're on.  The `--graph` "flag" tells `git` to make it pretty, like
-a timeline. You can use "Space" to page down the history of commits. Use `q` to
-exit.
 
 If we then `git checkout master`, and use `git log --graph` again, we will see
 that the `master` branch _only_ has the code up to the moment you "branched"
