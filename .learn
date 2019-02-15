@@ -1,7 +1,9 @@
-tags:
-  - readme
-  - git
-languages:
-  - ruby
-resources:
-  - none
+tags: 
+- jupyter 
+- python 
+
+languages: python 
+
+jupyter_notebook: true 
+
+resources: 0
