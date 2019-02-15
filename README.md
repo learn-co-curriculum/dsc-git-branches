@@ -1,5 +1,5 @@
 
-# Collaboration Using `Git`
+# Collaborating with `Git` Branches
 
 ## Introduction
 
