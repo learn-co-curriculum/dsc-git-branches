@@ -3,7 +3,7 @@
 
 ## Introduction
 
-So far we've primarily presented git as a version control system. Not only is git a good version control system, it is also a marvelous tool for collaboration and team development. In fact, it was originally designed by Linus Torvalds for coordinating development for the Linux kernel. A primary mechanism through which git collaboration can be effectively be organized is the concept of branches. 
+So far we've primarily presented git as a version control system. Not only is git a good version control system, it is also a marvelous tool for collaboration and team development. In fact, it was originally designed by Linus Torvalds for coordinating development for the Linux kernel. A primary mechanism through which git collaboration can effectively be organized is the concept of branches. 
 
 Two golden practices in collaborating with `git` are:
 
