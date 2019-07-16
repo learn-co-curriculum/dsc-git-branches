@@ -58,7 +58,7 @@ reality-shattering idea?
 
 Let's suppose a `master` branch with 2 commits:
 
-![Image of master branch with two commits](images/Image_187_GIT Branch.png)
+<img src="images/Image_187_GIT Branch.png">
 
 
 Best practices suggest that any new set of changes related to fixing a bug,
@@ -105,7 +105,7 @@ like a timeline. You can use "Space" to page down the history of commits. Use
 Let's suppose we added two new commits to our new branch. We could visualize it
 as:
 
-![Feature branch with two commits](images/Image_188_GIT Branch.png)
+<img src="images/Image_188_GIT Branch.png">
 
 To make sure that you don't lose work, you should make sure all your changes
 are committed before you switch branches. If you're doing work in
@@ -149,7 +149,7 @@ the commits from the `add-preprocessing-and-normalization` branch on your master
 
 Here's another way to visualize it:
 
-![Merged Timeline](images/Image_189_GIT Branch.png)
+!<img src="images/Image_189_GIT Branch.png">
 
 In this graphic, you might note that a commit happened to `master` _between_
 the two commits that made up our feature branch. The amazing thing is `git`
