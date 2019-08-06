@@ -162,14 +162,13 @@ branch -d branch-to-delete`.
 
 ## Preview Merging Remote Branches with `git fetch` and `git pull`
 
-Your local branches can merge in changes from _remote_ repositories branches
+Your local branches can merge in changes from _remote_ repository branches
 just like they can do for _local_ branches!
 
-To update a list of available branches at a _remote_ we use: `git fetch
-remote-name`.
+To update a list of available branches at a _remote_ we use: `git fetch remote-name`. Note this only updates the list of branches from remote repositories and not the local branches themselves. If you want to update the local branches, you have to merge.
 
 As a shorthand to `fetch` and then automatically merge the same-named branch
-from the _remote_ we can issue `git fetch remote-name branch-name-to-merge-in`.
+from the _remote_ we can issue `git pull remote-name branch-name-to-merge-in`.
 
 These are complex topics as it brings up the topic of how to reconcile lines of
 code where you and another developer might have changed the same thing. This is
@@ -213,3 +212,8 @@ _Do not do as stick man suggests!_
 
 [vi]: https://www.youtube.com/watch?v=_NUO4JEtkDw
 
+
+
+```python
+
+```
