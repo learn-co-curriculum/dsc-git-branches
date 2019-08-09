@@ -212,8 +212,3 @@ _Do not do as stick man suggests!_
 
 [vi]: https://www.youtube.com/watch?v=_NUO4JEtkDw
 
-
-
-```python
-
-```
