@@ -1,5 +1,5 @@
 
-# Collaborating with `Git` Branches
+# Collaborating with Git Branches
 
 ## Introduction
 
@@ -24,7 +24,7 @@ You will be able to:
 * Preview Merging Remote Branches with `git fetch` and `git pull`
 * Explain the motivation of the "golden practices"
 
-## Define What a `git` Branch is
+## Define What a git Branch is
 
 A `git` branch is a means to separate a new set of commits or edits from
 another branch. Typically we create a new branch off of `master`. If all
@@ -82,7 +82,7 @@ realities** etc.  As you add more commits on the feature branch you're changing
 _only_ the `add-preprocessing-and-normalization` reality. The `master` branch **will not be
 changed**. Let's talk about adding those commits.
 
-## Explain Switching Branches with `git checkout`
+## Explain Switching Branches with git checkout
 
 In order to start making changes on your new branch, you need to "check it
 out." After checking a branch out, your commits will be added to that branch's
@@ -160,7 +160,7 @@ _seriously_ cool.
 When you're done with a branch that's been merged you can delete it with: `git
 branch -d branch-to-delete`.
 
-## Preview Merging Remote Branches with `git fetch` and `git pull`
+## Preview Merging Remote Branches with git fetch and git pull
 
 Your local branches can merge in changes from _remote_ repository branches
 just like they can do for _local_ branches!
@@ -207,8 +207,3 @@ disposal.
 Image courtesy of [xkcd](https://www.xkcd.com/).
 
 _Do not do as stick man suggests!_
-
-<p class='util--hide'>View <a href='https://learn.co/lessons/git-collaboration-readme'>Git Collaboration</a> on Learn.co and start learning to code for free.</p>
-
-[vi]: https://www.youtube.com/watch?v=_NUO4JEtkDw
-
