@@ -3,15 +3,14 @@
 
 ## Introduction
 
-So far we've primarily presented git as a version control system. Not only is git a good version control system, it is also a marvelous tool for collaboration and team development. In fact, it was originally designed by Linus Torvalds for coordinating development for the Linux kernel. A primary mechanism through which git collaboration can effectively be organized is the concept of branches. 
+So far we've primarily presented Git as a version control system. Not only is Git a good version control system, it is also a marvelous tool for collaboration and team development. In fact, it was originally designed by Linus Torvalds for coordinating development for the Linux kernel. A primary mechanism through which Git collaboration can effectively be organized is the concept of branches. 
 
 Two golden practices in collaborating with `git` are:
 
 1. Keep the `master` _branch_ functional at all times
 2. Keep lines of work (_branches_) separate from each other
 
-Let's explore `git` _branches_ and we'll come back to review why
-these golden practices are so helpful.
+Let's explore `git` _branches_ and we'll come back to review why these golden practices are so helpful.
 
 ## Objectives
 
@@ -21,7 +20,7 @@ You will be able to:
 * Explain branching and committing changes
 * Explain switching branches with `git checkout`
 * Explain merging branches
-* Preview Merging Remote Branches with `git fetch` and `git pull`
+* Preview merging remote branches with `git fetch` and `git pull`
 * Explain the motivation of the "golden practices"
 
 ## Define What a git Branch is
@@ -32,7 +31,7 @@ developers we collaborate with honor Golden Practice 1, we can trust that
 `master` will be a safe starting point.
 
 When we branch, we're creating a separate parallel universe. We can experiment
-there without any bad effect. It's a contained sandbox where mistakes can be
+there without any adverse effects to the `master` branch. It's a contained sandbox where mistakes can be
 made or ideas can incubate.
 
 It's an idea that a lot of fiction has presented in the last 50 years.
@@ -50,8 +49,8 @@ If you understand multiple-timeline fiction, you get the idea of branches.
 
 ![Annie Edison Says Farewhen to the Inspector](https://media.giphy.com/media/aorHd4Tl6qIDK/giphy.gif)
 
-By doing work in branches, all collaborators can do work without messing with
-the main line known as `master`. OK, so how can we _actually_ leverage this
+By doing work in branches, collaborators can work without messing with
+the main timeline, known as `master`. OK, so how can we _actually_ leverage this
 reality-shattering idea?
 
 ## Explain Branching and Committing Changes
@@ -121,7 +120,7 @@ If we then `git checkout master`, and use `git log --graph` again, we will see
 that the `master` branch _only_ has the code up to the moment you "branched"
 into the `add-preprocessing-and-normalization` timeline, er, branch.
 
-The code from our `add-preprocessing-and-normalization` is tucked away in that branch,
+The code from `add-preprocessing-and-normalization` is tucked away in that branch,
 waiting patiently in isolation from the rest of your code in `master` until the
 feature is considered complete.
 
@@ -137,7 +136,7 @@ the `add-preprocessing-and-normalization` branch into the `master` branch. By me
 as though those events occurred on the `master` branch.
 
 When merging a branch with `git merge`, it's important to be currently working
-on your target branch, the branch that you want to gain the content of the feature
+on your target branch, the branch that you want to move the content to of the feature
 branch. The first step for our `add-preprocessing-and-normalization` merge is to checkout
 `master` because that is where you want the commits to end up.
 
@@ -169,9 +168,9 @@ To update a list of available branches at a _remote_ we use: `git fetch remote-n
 looks like:
 
 ```shell
-$ git fetch origin
-$ git checkout add-preprocessing-and-normalization
-$ git merge origin/laurens-preprocessing
+$ git fetch origin 
+$ git checkout add-preprocessing-and-normalization 
+$ git merge origin/laurens-preprocessing 
 ```
 
 And now our _local_ `add-preprocessing-and-normalization` has Lauren's ideas woven into it.
@@ -195,10 +194,10 @@ log` and see what the intention of a feature was.
 
 ## Summary
 
-`Git` is a complex tool, and these tools are just scratching the surface for
+Git is a complex tool, and these tools are just scratching the surface for
 collaborating with people. These workflows are just being introduced to
-you--and it may be challenging for the time being. You'll have lots of time to
-practice them and get used to what each command does. Don't try to cram it it
+you -- and it may be challenging for the time being. You'll have lots of time to
+practice them and get used to what each command does. Don't try to cram it
 all in at once; instead just start to get an understanding of what is at your
 disposal.
 
