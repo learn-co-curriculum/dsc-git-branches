@@ -16,12 +16,12 @@ Let's explore `git` _branches_ and we'll come back to review why these golden pr
 
 You will be able to:
 
-- Define what a `git` branch is
-- Explain branching and committing changes
-- Explain switching branches with `git checkout`
-- Explain merging branches
-- Preview merging remote branches with `git fetch` and `git pull`
-- Explain the motivation of the "golden practices"
+* Define what a `git` branch is
+* Explain branching and committing changes
+* Explain switching branches with `git checkout`
+* Explain merging branches
+* Preview merging remote branches with `git fetch` and `git pull`
+* Explain the motivation of the "golden practices"
 
 ## Define What a git Branch is
 
