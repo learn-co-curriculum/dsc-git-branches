@@ -50,7 +50,7 @@ By working in branches, collaborators can work without messing with the main tim
 
 Let's suppose a `master` branch with two commits:
 
-<img src="images/new_image_git_1.png" width="500" height="600">
+<img src="images/new_image_git_1.png">
 
 
 Best practices suggest that any new set of changes related to fixing a bug, creating a feature, or even messing around with experimental code in a "sandbox", should be started on a new branch.
