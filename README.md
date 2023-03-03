@@ -1,13 +1,14 @@
-
 # Collaborating with Git Branches
 
 ## Introduction
 
 So far we've primarily presented Git as a version control system. Not only is Git a good version control system, it is also a marvelous tool for collaboration and team development. In fact, it was originally designed by Linus Torvalds for coordinating development for the Linux kernel. A primary mechanism through which Git collaboration can effectively be organized is the concept of branches. 
 
+> Note: The figures here use the word `master` which is a legacy term that is still used in GitHub. It is more common now, and what you are likely to see, is `main`.
+
 Two golden practices in collaborating with `git` are:
 
-1. Keep the `master` _branch_ functional at all times
+1. Keep the `main` or `master` _branch_ functional at all times
 2. Keep lines of work ( _branches_ ) separate from each other
 
 Let's explore `git` _branches_ and we'll come back to review why these golden practices are so helpful.
@@ -24,9 +25,9 @@ You will be able to:
 
 ## Define a `git` branch
 
-A `git` branch is a means to separate a new set of commits or edits from another branch. Typically we create a new branch off of `master`. If all developers we collaborate with honor golden practice 1, we can trust that `master` will be a safe starting point. 
+A `git` branch is a means to separate a new set of commits or edits from another branch. Typically we create a new branch off of `master` or `main`. If all developers we collaborate with honor golden practice 1, we can trust that `master` or `main` will be a safe starting point. 
 
-When we branch, we're creating a separate parallel universe. We can experiment there without any adverse effects to the `master` branch. It's a contained sandbox where mistakes can be made or ideas can incubate.
+When we branch, we're creating a separate parallel universe. We can experiment there without any adverse effects to the `master` or `main` branch. It's a contained sandbox where mistakes can be made or ideas can incubate.
 
 It's an idea that a lot of fiction has presented in the last 50 years.
 
@@ -43,7 +44,7 @@ If you understand multiple-timeline fiction, you get the idea of branches.
 
 ![Annie Edison Says Farewhen to the Inspector](https://media.giphy.com/media/aorHd4Tl6qIDK/giphy.gif)
 
-By working in branches, collaborators can work without messing with the main timeline, known as `master`. OK, so how can we _actually_ leverage this reality-shattering idea?
+By working in branches, collaborators can work without messing with the main timeline, known as `master` or `main`. OK, so how can we _actually_ leverage this reality-shattering idea?
 
 
 ## Create a new branch
@@ -206,7 +207,7 @@ Alternatively, as a shorthand, you can fetch and then automatically merge the sa
 
 ## Explain the motivation of the "Golden Practices"
 
-As developers we try to make sure that everyone has a clean place to start from: be that for writing a new feature or fixing a bug. Branching lets us keep `master` working at all times. If an emergency bug comes up, we know we have a
+As developers we try to make sure that everyone has a clean place to start from: be that for writing a new feature or fixing a bug. Branching lets us keep `master` or `main` working at all times. If an emergency bug comes up, we know we have a
 solid foundation to build from. Feature branches also help us look at `git log` and see what the intention of a feature was.
 
 ## Summary
@@ -218,3 +219,8 @@ Git is a complex tool, and these tools are just scratching the surface for colla
 Image courtesy of [xkcd](https://www.xkcd.com/).
 
 _Do not do as stick man suggests!_
+
+
+```python
+
+```
