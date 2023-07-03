@@ -172,7 +172,7 @@ What happened here? Well, you made changes to the same file (`<filename>` in thi
 ```
 ...
 ...
-everthing is fine here
+everything is fine here
 <<<<<<< HEAD
 ...
 ...
@@ -186,7 +186,7 @@ this is the portion from the source branch
 
 All the lines between `<<<<<<< HEAD` and `=======` are the conflicting lines from the base branch and all lines between `=======` and `>>>>>>> branch-name` are the conflicting lines from the `<branch-name>` branch. Here you can discard the set of conflicting lines of your choice and then delete the conflict markers (`<<<<<<< HEAD`, `=======`, and `>>>>>>> branch-name`). After you do this, add and commit your changes so you can merge the branches without any issues. 
 
-_Note: If there are multiple conflicts in the same file, each conflict is surrounded by conflict markers and it is your resposibility to resolve each conflict individually and remove all the conflict markers before you attempt to merge again._ 
+_Note: If there are multiple conflicts in the same file, each conflict is surrounded by conflict markers and it is your responsibility to resolve each conflict individually and remove all the conflict markers before you attempt to merge again._ 
 
 
 ## Keep your local repo up to date
