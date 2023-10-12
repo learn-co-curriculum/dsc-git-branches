@@ -42,7 +42,7 @@ It's an idea that a lot of fiction has presented in the last 50 years.
 
 If you understand multiple-timeline fiction, you get the idea of branches.
 
-![Annie Edison Says Farewhen to the Inspector](https://media.giphy.com/media/aorHd4Tl6qIDK/giphy.gif)
+![Annie Edison Says Farewell to the Inspector](https://media.giphy.com/media/aorHd4Tl6qIDK/giphy.gif)
 
 By working in branches, collaborators can work without messing with the main timeline, known as `master` or `main`. OK, so how can we _actually_ leverage this reality-shattering idea?
 
@@ -219,3 +219,8 @@ Git is a complex tool, and these tools are just scratching the surface for colla
 Image courtesy of [xkcd](https://www.xkcd.com/).
 
 _Do not do as stick man suggests!_
+
+
+```python
+
+```
